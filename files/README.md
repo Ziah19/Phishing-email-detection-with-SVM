@@ -10,7 +10,7 @@ A baseline email classifier built to answer two questions: how well can a simple
 
 ## Dataset
 
-[Phishing Email Dataset on Kaggle](https://www.kaggle.com/) (search for *"Phish No More: The Enron, Ling, CEAS, Nazario, Nigerian & SpamAssassin Datasets"*), a combination of six public email collections. The file is **not included** in this repository. Download `phishing_email.csv` from Kaggle and check the dataset page for its licence and citation requests.
+[Phishing Email Dataset on Kaggle](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset/data) (search for *"Phish No More: The Enron, Ling, CEAS, Nazario, Nigerian & SpamAssassin Datasets"*), a combination of six public email collections. The file is **not included** in this repository. Download `phishing_email.csv` from Kaggle and check the dataset page for its licence and citation requests.
 
 | | Emails |
 |---|---|
@@ -110,9 +110,3 @@ Two emails is a very small test. It illustrates the failure, but it does not mea
 
 **Google Colab:** open the notebook, upload `phishing_email.csv` through the folder panel, wait for the upload to finish, then click **Runtime > Run all**. Colab deletes uploaded files when a session ends, so upload the file again after any restart.
 
-**Locally:**
-
-```
-pip install -r requirements.txt
-jupyter notebook phishing_email_detection_svm.ipynb
-```
