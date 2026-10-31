@@ -37,7 +37,7 @@ Label 1 covers phishing **and** ordinary spam, so this project detects "unwanted
 
 For Model 1, precision on phishing is 98.8% and recall is 99.2%.
 
-![Baseline results](screenshots/02b-baseline-results.png)
+![Baseline results](screenshots/02b-baseline-results.png.png)
 
 ## Checking for dataset shortcuts
 
@@ -48,7 +48,7 @@ The strongest features were a clue:
 - **Phishing side:** years (2004 to 2022) and the name of the person who collected one of the sources.
 - **Legitimate side:** names of Enron staff, a Houston area code and software mailing-list terms.
 
-![Top words](screenshots/03-top-words.png)
+![Top words](screenshots/03-top-words.png.png)
 
 I removed all numbers and banned those source-specific words, then retrained (Model 2). Accuracy fell only from 98.9% to 98.7%. So these giveaways were not the main reason for the high score, and the two groups differ in more than metadata. The score most likely still overstates how well the model would do on modern, real-world email.
 
@@ -64,7 +64,7 @@ Of the 71 phishing emails Model 1 missed, the five I read were:
 
 Most contain none of the usual scam vocabulary, so a word-based model has nothing to latch on to.
 
-![Missed emails](screenshots/04-missed-emails.png)
+![Missed emails](screenshots/04-missed-emails.png.png)
 
 ## Testing on real samples
 
@@ -79,7 +79,7 @@ The voucher email reads like an ordinary shop promotion, so both models missed i
 
 Two emails is a very small test. It illustrates the failure, but it does not measure how often it happens. The email text was transcribed from screenshots, so it is close to the originals but not exact.
 
-![Real email test](screenshots/07-real-emails-test.png)
+![Real email test](screenshots/07-real-emails-test.png.png)
 
 ## Limitations
 
